@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hafiz Abdul Aziz - Personal Islamic Website">
+<title>حافظ محمد عبدالعزيز | Hafiz Abdul Aziz</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7f3;
+  color: #183b32;
+  line-height: 1.8;
+}
+header {
+  background: linear-gradient(135deg,#0b3029,#17634c);
+  color: white;
+  text-align: center;
+  padding: 45px 18px;
+}
+.logo {
+  width: 105px;
+  height: 105px;
+  border: 3px solid #d9c58a;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 43px;
+  color: #d9c58a;
+}
+h1 {
+  font-size: 29px;
+  margin-bottom: 5px;
+}
+.arabic {
+  font-size: 29px;
+  direction: rtl;
+}
+header p {
+  color: #e3eadf;
+}
+nav {
+  background: #ffffff;
+  padding: 13px 5px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 8px #0001;
+}
+nav a {
+  display: inline-block;
+  color: #14513d;
+  text-decoration: none;
+  margin: 5px 8px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.language {
+  text-align: center;
+  margin: 20px;
+}
+button {
+  background: #14513d;
+  color: white;
+  border: 0;
+  padding: 10px 17px;
+  margin: 4px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+button:focus {
+  outline: 2px solid #d9c58a;
+}
+main {
+  max-width: 850px;
+  margin: auto;
+  padding: 12px;
+}
+section {
+  background: white;
+  padding: 24px;
+  margin: 18px 0;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px #0000000b;
+}
+h2 {
+  color: #14513d;
+  border-bottom: 2px solid #d9c58a;
+  padding-bottom: 8px;
+}
+.arabic-text {
+  direction: rtl;
+  text-align: right;
+  font-size: 21px;
+}
+footer {
+  background: #0b3029;
+  color: white;
+  text-align: center;
+  padding: 24px;
+}
+footer p {
+  margin: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">ع</div>
+  <p>بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+  <h1>Hafiz Abdul Aziz</h1>
+  <div class="arabic">حافظ محمد عبدالعزيز</div>
+  <p>Personal Website | Islamic Identity</p>
+</header>
+
+<nav>
+  <a href="#about">পরিচয়</a>
+  <a href="#education">শিক্ষা</a>
+  <a href="#islam">ইসলামিক</a>
+  <a href="#contact">যোগাযোগ</a>
+</nav>
+
+<div class="language">
+  <button onclick="changeLang('bn')">বাংলা</button>
+  <button onclick="changeLang('ar')">العربية</button>
+  <button onclick="changeLang('en')">English</button>
+</div>
+
+<main>
+
+<section id="about">
+  <h2 id="aboutTitle">আমার পরিচয়</h2>
+  <p id="aboutText">
+    আসসালামু আলাইকুম ওয়া রহমাতুল্লাহ।
+    আমার ব্যক্তিগত ওয়েবসাইটে আপনাকে স্বাগতম।
+    এখানে আমার পরিচিতি, শিক্ষা এবং ইসলামিক
+    বিষয়ের বিভিন্ন লেখা প্রকাশ করা হবে।
+  </p>
+</section>
+
+<section id="education">
+  <h2 id="educationTitle">আমার শিক্ষা ও পরিচয়</h2>
+  <p id="educationText">
+    পরিচয়: হাফেজুল কুরআন।
+    শিক্ষা ও জ্ঞান অর্জন একটি চলমান প্রক্রিয়া।
+  </p>
+</section>
+
+<section id="islam">
+  <h2 id="islamTitle">ইসলামিক বিভাগ</h2>
+  <p id="islamText">
+    কুরআন, হাদিস, দোয়া এবং ইসলামিক শিক্ষামূলক
+    বিষয় নিয়ে এই বিভাগটি সাজানো হবে।
+  </p>
+  <p class="arabic-text">
+    وَقُلْ رَبِّ زِدْنِي عِلْمًا
+  </p>
+</section>
+
+<section id="contact">
+  <h2 id="contactTitle">যোগাযোগ</h2>
+  <p id="contactText">
+    আমার ওয়েবসাইটে আসার জন্য আপনাকে ধন্যবাদ।
+  </p>
+</section>
+
+</main>
+
+<footer>
+  <p>حافظ محمد عبدالعزيز</p>
+  <p>Hafiz Abdul Aziz</p>
+  <p>© 2026 All Rights Reserved</p>
+</footer>
+
+<script>
+const translations = {
+bn: {
+aboutTitle: "আমার পরিচয়",
+aboutText: "আসসালামু আলাইকুম ওয়া রহমাতুল্লাহ। আমার ব্যক্তিগত ওয়েবসাইটে আপনাকে স্বাগতম। এখানে আমার পরিচিতি, শিক্ষা এবং ইসলামিক বিষয়ের বিভিন্ন লেখা প্রকাশ করা হবে।",
+educationTitle: "আমার শিক্ষা ও পরিচয়",
+educationText: "পরিচয়: হাফেজুল কুরআন। শিক্ষা ও জ্ঞান অর্জন একটি চলমান প্রক্রিয়া।",
+islamTitle: "ইসলামিক বিভাগ",
+islamText: "কুরআন, হাদিস, দোয়া এবং ইসলামিক শিক্ষামূলক বিষয় নিয়ে এই বিভাগটি সাজানো হবে।",
+contactTitle: "যোগাযোগ",
+contactText: "আমার ওয়েবসাইটে আসার জন্য আপনাকে ধন্যবাদ।"
+},
+ar: {
+aboutTitle: "نبذة عني",
+aboutText: "السلام عليكم ورحمة الله. أهلاً وسهلاً بكم في موقعي الشخصي. ستجدون هنا معلومات عني وكتاباتي الإسلامية.",
+educationTitle: "التعليم والتعريف",
+educationText: "التعريف: حافظ للقرآن الكريم. طلب العلم رحلة مستمرة.",
+islamTitle: "القسم الإسلامي",
+islamText: "هذا القسم مخصص للقرآن الكريم والحديث الشريف والأدعية والتعليم الإسلامي.",
+contactTitle: "التواصل",
+contactText: "شكراً لزيارتكم موقعي الشخصي."
+},
+en: {
+aboutTitle: "About Me",
+aboutText: "Assalamu Alaikum. Welcome to my personal website. Here you can find my introduction, education and Islamic articles.",
+educationTitle: "Education & Identity",
+educationText: "Identity: Hafiz of the Holy Quran. Learning is a lifelong journey.",
+islamTitle: "Islamic Section",
+islamText: "This section is dedicated to Quran, Hadith, Duas and Islamic educational content.",
+contactTitle: "Contact",
+contactText: "Thank you for visiting my personal website."
+}
+};
+
+function changeLang(lang) {
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[id]").forEach(element => {
+    if (translations[lang][element.id]) {
+      element.textContent = translations[lang][element.id];
+    }
+  });
+}
+</script>
+
+</body>
+</html>
